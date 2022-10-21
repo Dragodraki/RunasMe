@@ -12,6 +12,7 @@ Well, when you open any software as administrator (and accept UAC), it behaves n
 1. Your account is member of the administrator group (you're an administrator)
 2. Your account belongs to any other group (e.g. standard user with limited rights)
 3. You are in environment of NT-SYSTEM/ROOT already (account type is unimportant here)
+
 In case of possibility 1 your started app/wizard use the same profile environments as your real account and you won't notice any difference except you run under high integrity level now.
 In case of possibility 2 your started app runs with the environment variables of a stranger. E.g. a game started as administrator will save to a complete other profile than yours (often at the end after wizard installation when asked whether to run the app directly and you say yes). %AppData%, %LocalAppData% and so point the the stranger account and aren't saved in your account! If you later run without administrator rights (or the other way round), you won't see your progress like it never existed. Another example: Open cmd as administrator and type "whoami" - the answer is the account name you got your administrator token from.
 Possibility 3 is similar to 2 but the SYSTEM even hasn't an actual account profile. It's the case when your app is executed by service module or through apps like PSExec. Because of the environment variables differ a lot from real user accounts games can even crash or fail saving settings/progress.
