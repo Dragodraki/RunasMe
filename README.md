@@ -58,6 +58,7 @@ Syntax usage:
 <br>
   RunasMe.exe [/Flags] [Path]File [Args]
 <br>
+
 Flags:
 <br>
   /wait = Run until (associated) program is terminated
@@ -68,6 +69,7 @@ Flags:
   <br>
   /debug = Display result as MsgBox (reveals error cause)
 <br>
+
 Examples:
 <br>
   RunasMe.exe cmd
@@ -82,6 +84,7 @@ Examples:
   <br>
   RunasMe.exe /debug "WhyTheFail" AndHelp"
 <br>
+
 Hint:
 <br>
   You can also drag'n'drop files/shortcuts on the program.
