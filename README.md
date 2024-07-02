@@ -23,7 +23,9 @@ When "Run as administrator" any installer wizard, its impact depends the followi
 3. You are in environment of NT-SYSTEM/ROOT already (account type is unimportant here)
 
 1 - In case of possibility 1 your started app/wizard use the same profile environments as your real account and you won't notice any difference except you run under high integrity level now. That's because the user account changed - user account A changed to user A again. For local single-user PCs RunasMe.exe does not offer anything you won't already have.
+<br>
 2 - In case of possibility 2 your started app runs with the environment of a stranger. E.g. a game started as administrator will save to a complete other profile than yours (often at the end after wizard installation when asked whether to run the app directly and you say yes). %AppData%, %LocalAppData% and so point the the stranger account and aren't saved in your account! The same goes for the registry hive: Instead of the logged-on HKCU hive another one from HCU\-SID- will be used (that's the HKCU on the administrator accounts desktop) If you later run without administrator rights (or the other way round), you won't see your progress like it never existed. Another example: Open cmd as administrator and type "whoami" - the answer is the account name you got your administrator token from.
+<br>
 3 - Possibility 3 is similar to 2 but the SYSTEM even hasn't an actual account profile. It's the case when your app is executed by service / agent or through apps like PSExec. Because of the environment variables differ a lot from real user accounts games can even crash or fail saving settings/progress.
 
 But the worst is yet to come. If your session is elevated already (e.g. cmd.exe), Windows doesn't provide any proper way to downgrade back and start a game with your actual profile. You have never seen a button called "Downgrade back to desktop user", have you?
