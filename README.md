@@ -1,5 +1,6 @@
 # RunasMe
 Run app as current logged-on user instance from Administrators/NT-SYSTEM/other-users context with specified UAC-behavior, optional waiting for termination and preferred method type when have to fallback.
+(Release Date: 02.07.2024, Publisher: Dragodraki alias Dreamland, Notice: designed by me and no fork) 
 <br/>
 
 [<img src="https://user-images.githubusercontent.com/76787321/197257488-1b7aa8e9-9b6f-4600-949e-8ff477cb4bf4.png" width="23%"></img>](https://github.com/Dragodraki/RunasMe/releases/latest/download/RunasMe.exe)
