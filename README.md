@@ -1,8 +1,8 @@
 # *Info: New greatly improved version to be released soon!*
 <br/>
 
-# RunUnElevated
-Run app as current logged-in user even from Administrators/NT-SYSTEM context
+# RunasMe
+Run app as current logged-on user instance from Administrators/NT-SYSTEM/other-users context with specified UAC-behavior, optional waiting for termination and preferred method type when have to fallback.
 <br/>
 
 [<img src="https://user-images.githubusercontent.com/76787321/197257488-1b7aa8e9-9b6f-4600-949e-8ff477cb4bf4.png" width="23%"></img>](https://github.com/Dragodraki/RunUnElevated/releases/latest/download/RunUnElevated.exe)
