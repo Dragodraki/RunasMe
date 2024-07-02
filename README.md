@@ -3,8 +3,8 @@ Run app as current logged-on user instance from Administrators/NT-SYSTEM/other-u
 <br/>
 
 [<img src="https://user-images.githubusercontent.com/76787321/197257488-1b7aa8e9-9b6f-4600-949e-8ff477cb4bf4.png" width="23%"></img>](https://github.com/Dragodraki/RunUnElevated/releases/latest/download/RunUnElevated.exe)
-<br/>
 
+<br><br>
 -------------------------------
 EXPLANATION
 -------------------------------
@@ -31,7 +31,7 @@ This is where my app comes in. No matter the user account of the current process
 Announcement of security:
 <br>
 Though RunasMe is very mighty and can be useful in various situations, it's techniques does not rely on hacking at all. Consider it's features as 'secrets' that MS Windows's own services use all the time (just in this moment when you sitting in front yout browser and read this). How else for example system actions like defender toast notifications with root permissions should be triggered without leaving high risk of privilege escalations, hm?! How do you think Antivirus/GPU-Programs or any other software that have been invoked by services could show their interface to the users desktop without explicit storing his/her logon credentials otherwise? Unfortunately until now, Microsoft never implemented it as a regular GUI option. If you - my dear reader - should belong to one of those script kiddos hoping for abusement of RunasMe to grabbing UAC tokens without permission, I have to disappoint you thoroughly. RunasMe is, and never was, designed for or capable of bypassing the UAC in a manner you were granted any rights you didn't possess before already! Cheers!
-<br>
+<br><br>
 
 -------------------------------
 LICENSE (FREEWARE)
@@ -86,7 +86,7 @@ Examples:
 Hint:
 <br>
   &nbsp;&nbsp;You can also drag'n'drop files/shortcuts on the program.
-<br>
+<br><br>
 
 -------------------------------
 WINDOWS SUPPORT
