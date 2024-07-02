@@ -104,7 +104,7 @@ But I'm getting off the subject, RunasMe is compatible and tested with the follo
 -------------------------------
 HOW IT WORKS TECHNICALLY
 -------------------------------
-Do not worry, I'll stick to the superficial view and keep it as short as possible - for detailed information on the individual functions and their possible applications, please refer to Aunt Google or (boring) MS websites. RunasMe has several and different ways to create the target program under the desktops context with/without waiting and with/without showing the UAC:
+Do not worry, I'll stick to the superficial view - for detailed information on the individual functions and their possible applications, please refer to Aunt Google or (boring) MS websites. RunasMe has several and different ways to create the target program under the desktops context with/without waiting and with/without showing the UAC:
 <br>
 <br>
 If the current process's context is identical to the logged-on user (which means you simply run RunasMe.exe without runas.exe), the started process will be the same like when you double-click the EXE file. Functions like "*CreateProcess*" / "*ShellExecute*" and so on would come into mind here. Yes, it varies a bit when you chose to ignore the UAC, using it's manifest or force it and whether to wait for its termination or not but the tokenization is pretty much the same. To make the UAC use the target programs information and not that one of a 3rd referer, my included C++ program Run.exe is used.
