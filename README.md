@@ -56,38 +56,38 @@ You have to use either a command-line interface like cmd, powershell, any other 
 
 Syntax usage:
 <br>
-  RunasMe.exe [/Flags] [Path]File [Args]
+  &nbsp;&nbsp;RunasMe.exe [/Flags] [Path]File [Args]
 <br>
 
 Flags:
 <br>
-  /wait = Run until (associated) program is terminated
+  &nbsp;&nbsp;/wait = Run until (associated) program is terminated
   <br>
-  /fb=[mc/cu/off] = Fallback to macro / current user / exit
+  &nbsp;&nbsp;/fb=[mc/cu/off] = Fallback to macro / current user / exit
   <br>
-  /uac=[off/on/force] = UAC behavior (default "uac=off")
+  &nbsp;&nbsp;/uac=[off/on/force] = UAC behavior (default "uac=off")
   <br>
-  /debug = Display result as MsgBox (reveals error cause)
+  &nbsp;&nbsp;/debug = Display result as MsgBox (reveals error cause)
 <br>
 
 Examples:
 <br>
-  RunasMe.exe cmd
+  &nbsp;&nbsp;RunasMe.exe cmd
   <br>
-  RunasMe.exe "C:\Windows\system32\devmgmt.msc"
+  &nbsp;&nbsp;RunasMe.exe "C:\Windows\system32\devmgmt.msc"
   <br>
-  RunasMe.exe /uac=off /fb=mc sysdm.cpl
+  &nbsp;&nbsp;RunasMe.exe /uac=off /fb=mc sysdm.cpl
   <br>
-  RunasMe.exe /wait /fb=off MyApp.exe
+  &nbsp;&nbsp;RunasMe.exe /wait /fb=off MyApp.exe
   <br>
-  RunasMe.exe "cmd.exe" "/c explorer.exe %userprofile%
+  &nbsp;&nbsp;RunasMe.exe "cmd.exe" "/c explorer.exe %userprofile%
   <br>
-  RunasMe.exe /debug "WhyTheFail" AndHelp"
+  &nbsp;&nbsp;RunasMe.exe /debug "WhyTheFail" AndHelp"
 <br>
 
 Hint:
 <br>
-  You can also drag'n'drop files/shortcuts on the program.
+  &nbsp;&nbsp;You can also drag'n'drop files/shortcuts on the program.
 <br>
 
 -------------------------------
