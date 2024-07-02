@@ -1,6 +1,3 @@
-# *Info: New greatly improved version to be released soon!*
-<br/>
-
 # RunasMe
 Run app as current logged-on user instance from Administrators/NT-SYSTEM/other-users context with specified UAC-behavior, optional waiting for termination and preferred method type when have to fallback.
 <br/>
@@ -32,8 +29,9 @@ But the worst is yet to come. If your session is elevated already (e.g. cmd.exe)
 This is where my app comes in. No matter the user account of the current process, all apps parsed to RunasMe will use the (unelevated) interactive desktop user with it's environment folders and registry hive. Having an installer that has been required administrator rights to place your files in Program Files and asks to run the software right away, only needs my RunasMe.exe to start the game as intended, saving its progress/settings to the actual users location. Plus, its much saver to use than keeping elevated rights when not needed. You never can be sure the game/software not contain having security gaps which could lead to privilege escalations. Invoked by RunasMe.exe it simply does not matter as it will be executed with low/medium user integrity.
 
 Announcement of security:
+<br>
 Though RunasMe is very mighty and can be useful in various situations, it's techniques does not rely on hacking at all. Consider it's features as 'secrets' that MS Windows's own services use all the time (just in this moment when you sitting in front yout browser and read this). How else for example system actions like defender toast notifications with root permissions should be triggered without leaving high risk of privilege escalations, hm?! How do you think Antivirus/GPU-Programs or any other software that have been invoked by services could show their interface to the users desktop without explicit storing his/her logon credentials otherwise? Unfortunately until now, Microsoft never implemented it as a regular GUI option. If you - my dear reader - should belong to one of those script kiddos hoping for abusement of RunasMe to grabbing UAC tokens without permission, I have to disappoint you thoroughly. RunasMe is, and never was, designed for or capable of bypassing the UAC in a manner you were granted any rights you didn't possess before already! Cheers!
-
+<br>
 
 -------------------------------
 LICENSE (FREEWARE)
@@ -47,7 +45,7 @@ Limitations:
 - Use the app at your own risk!
 - Don't sell it as product or pretend to be its developer!
 - Don't abuse it for malicious purposes!
-
+<br>
 
 -------------------------------
 USAGE
@@ -100,6 +98,7 @@ But I'm getting off the subject, RunasMe is compatible and tested with the follo
 - Windows XP
 - Windows 7
 - Windows 11
+<br>
 
 -------------------------------
 HOW IT WORKS TECHNICALLY
@@ -113,10 +112,11 @@ If your process owner is not the same as the desktops account (e.g. you use the 
 The process call were explained. But there are another topic - filesystem permissions. To make sure the logged-on user (which might differ from the process owner) can access the temporary files from NSIS I had to grant access to the first named explicitly. And also a lot of WMI information were needed to get the logged-on user's name, PID and profile path in the first way we have to give access to. As Microsoft made the WMIC.exe "deprecated" in the last years, I had to find a way making the needed queries with just WMI - NSIS is not much of a help here, so I had to program another C++ app called "GetSessionUser.exe". This one is able to gain the actual user we crave for - it might give false information on Windows 2000, but NSIS will not use it on 2000/XP then and better use one of the fallback strategies.
 
 All together with RunasMe flags (/with, /uac=, /fb=, /debug), I had to wrap one launcher around the other (the one perfect launcher with all stuff included would be very utopian to program). That is the reason for why intense character escaping, C++ programming and testing on different OS's were indispensable for my app to being finished and cost my many extra days.
-
+<br>
 
 -------------------------------
 SPECIAL THANKS
 -------------------------------
 Thank you very much for your arsenal of tools, NirSoft! Especially your product "AdvancedRun" comes in handy for me to ignore the UAC, which is somethat tricky. Another very, very useful feature is your GUI - as RunasMe not only use "AdvancedRun" of course, but also others that invoked or be invoked by it, I had to do a lot quotation mark escaping that gave me headache even with your app as 'debugger'. Maybe it would be helpful if you could add it to your website, because without quotation marks only one parameter without spaces would have been working.
 Anyway: As RunasMe's project code is much more comprehensive than only calling AdvancedRun.exe, I decided against naming them within my app as developer.
+<br>
